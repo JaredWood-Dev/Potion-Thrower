@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
         finalPotionText.text = "Potions Thrown: " + thrownPotions.ToString();
         finalTimeText.text = "Time Elapsed: " + GetTime(timeElapsed);
 
-        if (SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCount)
+        if (SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCountInBuildSettings - 1)
         {
             gameOverPanel.transform.GetChild(0).gameObject.SetActive(false);
         }

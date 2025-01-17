@@ -20,7 +20,7 @@ public class MenuManager : MonoBehaviour
 
     public void Start()
     {
-        numberOfLevels = SceneManager.sceneCount;
+        numberOfLevels = SceneManager.sceneCountInBuildSettings - 1;
         
         DisplayMenu();
         GenerateLevelArray();
