@@ -879,7 +879,7 @@ TextureImporter:
         width: 65
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -888,6 +888,94 @@ TextureImporter:
       bones: []
       spriteID: d4a4be86a67c2e24d8ac8f1f8e8e2a40
       internalID: -506721846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiny_Target
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 111
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b4742f649229a6409c5a9d3417e00b7
+      internalID: 1238150900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 46
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 2, z: 2, w: 2}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a210ad40cd4404f9edbcabe4fc8aad
+      internalID: 384587469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Title_Potion
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 6
+        width: 53
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff0b9837b0ef0a4d8b5ac3b594c3adb
+      internalID: -1686283602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Title_Thrower
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 6
+        width: 74
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2ccd2736d4a27499c420a5d93cf96a
+      internalID: 489757943
       vertices: []
       indices: 
       edges: []
@@ -915,6 +1003,7 @@ TextureImporter:
       Bottle_2: 1500890448
       Bottle_3: 1193088166
       Bottle_4: 233064445
+      Button: 384587469
       Green_Potion_1: 1360706123
       Green_Potion_2: -366181788
       Green_Potion_3: -1895780138
@@ -964,6 +1053,9 @@ TextureImporter:
       Syruyar_3: -2009179828
       Syruyar_Body: -99987981
       Target: -376314376
+      Tiny_Target: 1238150900
+      Title_Potion: -1686283602
+      Title_Thrower: 489757943
       Yellow_Potion_1: 538667237
       Yellow_Potion_2: 659250827
       Yellow_Potion_3: -1249028291
