@@ -1041,7 +1041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 970caa19765b8bc41b6c03080413a4ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberOfLevels: 6
+  numberOfLevels: 0
   mainMenu: {fileID: 2088324674}
   levelSelect: {fileID: 1089886282}
   minX: 0
