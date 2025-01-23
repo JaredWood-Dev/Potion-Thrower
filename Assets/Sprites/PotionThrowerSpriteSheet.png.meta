@@ -945,7 +945,7 @@ TextureImporter:
         width: 53
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -967,7 +967,7 @@ TextureImporter:
         width: 74
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -976,6 +976,50 @@ TextureImporter:
       bones: []
       spriteID: 4e2ccd2736d4a27499c420a5d93cf96a
       internalID: 489757943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Target
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 87
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a307b791b85a9164586c43d18680fe7f
+      internalID: -1134647608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Tiny_Target
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 95
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c959ede36ec3cf04c944c6d548609798
+      internalID: 2074373378
       vertices: []
       indices: 
       edges: []
@@ -999,6 +1043,8 @@ TextureImporter:
       Blue_Potion_2: 484911849
       Blue_Potion_3: -1659707216
       Blue_Potion_4: -848292541
+      Blue_Target: -1134647608
+      Blue_Tiny_Target: 2074373378
       Bottle_1: -365762400
       Bottle_2: 1500890448
       Bottle_3: 1193088166
