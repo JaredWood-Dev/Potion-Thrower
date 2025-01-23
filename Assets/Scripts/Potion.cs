@@ -60,6 +60,13 @@ public class Potion : MonoBehaviour
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
+
+        //Material Sound
+        if (collision.gameObject.GetComponent<AudioSource>() != null)
+        {
+            print("playing sound of " + collision.gameObject.name);
+            collision.gameObject.GetComponent<AudioSource>().Play();
+        }
     }
 
     void DestroyPotion()

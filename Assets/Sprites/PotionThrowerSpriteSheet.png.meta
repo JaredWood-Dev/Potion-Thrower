@@ -989,7 +989,7 @@ TextureImporter:
         width: 14
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1011,7 +1011,7 @@ TextureImporter:
         width: 6
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1020,6 +1020,72 @@ TextureImporter:
       bones: []
       spriteID: c959ede36ec3cf04c944c6d548609798
       internalID: 2074373378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Material_Stone
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 86
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 1, z: 1, w: 1}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c2f92cd25bfe73488ea257fec77efad
+      internalID: 1104038743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Material_Wood
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 86
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 1, z: 1, w: 1}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 339f27aba7e7145498dbd994dcca65be
+      internalID: -865351603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Material_Bouncy
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 94
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 1, y: 0, z: 1, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4153a4e487a93b4fa8c5873020f5f42
+      internalID: -735905205
       vertices: []
       indices: 
       edges: []
@@ -1054,6 +1120,9 @@ TextureImporter:
       Green_Potion_2: -366181788
       Green_Potion_3: -1895780138
       Green_Potion_4: -1375724995
+      Material_Bouncy: -735905205
+      Material_Stone: 1104038743
+      Material_Wood: -865351603
       PotionThrowerSpriteSheet_10: -1082920692
       PotionThrowerSpriteSheet_11: -1375811273
       PotionThrowerSpriteSheet_16: -270444920
