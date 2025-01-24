@@ -62,9 +62,8 @@ public class Potion : MonoBehaviour
         }
 
         //Material Sound
-        if (collision.gameObject.GetComponent<AudioSource>() != null)
+        if (collision.gameObject.GetComponent<AudioSource>() != null && !collision.gameObject.CompareTag("Potion"))
         {
-            print("playing sound of " + collision.gameObject.name);
             collision.gameObject.GetComponent<AudioSource>().Play();
         }
     }

@@ -9,6 +9,7 @@ TagManager:
   - GameManager
   - Wall
   - BouncyWall
+  - StoneWall
   layers:
   - Default
   - TransparentFX

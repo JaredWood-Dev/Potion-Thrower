@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     [Header("Game Data")] 
     public int thrownPotions;
     public int totalTargets;
+    private int _startingTargetAmount;
     public float timeElapsed;
     
     [Header("UI Elements")]
@@ -19,6 +20,9 @@ public class GameManager : MonoBehaviour
     public GameObject gameOverPanel;
     public Text finalPotionText;
     public Text finalTimeText;
+    public Text accuracyText;
+
+    public GameObject pauseMenu;
     
     public bool gameOver;
 
@@ -27,9 +31,12 @@ public class GameManager : MonoBehaviour
         totalTargets = GameObject.FindGameObjectsWithTag("Target").Length;
         targetText.text = totalTargets.ToString();
         potionText.text = thrownPotions.ToString();
+
+        _startingTargetAmount = totalTargets;
         
         gameOver = false;
         gameOverPanel.SetActive(false);
+        pauseMenu.SetActive(false);
     }
 
     public void HitTarget()
@@ -53,6 +60,16 @@ public class GameManager : MonoBehaviour
     {
         if (!gameOver)
             timeElapsed += Time.deltaTime;
+
+        if (Input.GetKeyDown(KeyCode.Escape) && !pauseMenu.activeInHierarchy)
+        {
+            pauseMenu.SetActive(true);
+            Time.timeScale = 0;
+        }
+        else if (Input.GetKeyDown(KeyCode.Escape) && pauseMenu.activeInHierarchy)
+        {
+            UnpauseGame();
+        }
         
         timeText.text = GetTime(timeElapsed);
     }
@@ -64,6 +81,8 @@ public class GameManager : MonoBehaviour
         
         finalPotionText.text = "Potions Thrown: " + thrownPotions.ToString();
         finalTimeText.text = "Time Elapsed: " + GetTime(timeElapsed);
+        float percentAccuracy = (_startingTargetAmount / (float)thrownPotions) * 100;
+        accuracyText.text = $"Accuracy: {percentAccuracy:00.0}%";
 
         if (SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCountInBuildSettings - 1)
         {
@@ -87,5 +106,16 @@ public class GameManager : MonoBehaviour
     public void LoadNextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void ReloadLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void UnpauseGame()
+    {
+        pauseMenu.SetActive(false);
+        Time.timeScale = 1;
     }
 }
