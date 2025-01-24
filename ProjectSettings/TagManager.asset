@@ -7,6 +7,9 @@ TagManager:
   - Target
   - Potion
   - GameManager
+  - Wall
+  - BouncyWall
+  - StoneWall
   layers:
   - Default
   - TransparentFX

@@ -41,7 +41,8 @@ public class Thrower : MonoBehaviour
     {
         if (Input.GetKeyUp("space"))
         {
-            ThrowPotion(_activePotion);
+            if(_activePotion != null)
+                ThrowPotion(_activePotion);
             _activePotion = null;
             //throwForce = 0f;
             GetComponent<Animator>().SetTrigger("Throw");
