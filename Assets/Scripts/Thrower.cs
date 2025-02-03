@@ -39,6 +39,13 @@ public class Thrower : MonoBehaviour
 
     void Update()
     {
+        //Keep Syruyar in the bottom left
+        GameObject angleSelector = GameObject.Find("Angle Selector");
+        var angleTransform = angleSelector.GetComponent<RectTransform>();
+        Vector3 position;
+        RectTransformUtility.ScreenPointToWorldPointInRectangle(angleTransform, angleTransform.position, Camera.main, out position);
+        gameObject.transform.position = position;
+        
         if (Input.GetKeyUp("space"))
         {
             if(_activePotion != null)
