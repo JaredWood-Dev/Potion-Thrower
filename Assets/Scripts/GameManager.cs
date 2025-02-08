@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.IO;
+using System.Linq;
 
 public class GameManager : MonoBehaviour
 {
@@ -26,8 +28,15 @@ public class GameManager : MonoBehaviour
     
     public bool gameOver;
 
+    [Header("Music Management")] 
+    public AudioClip[] currentPlaylist;
+    public AudioClip currentSong;
+
     void Start()
     {
+        //When a level load, ensure game is running
+        Time.timeScale = 1;
+        
         totalTargets = GameObject.FindGameObjectsWithTag("Target").Length;
         targetText.text = totalTargets.ToString();
         potionText.text = thrownPotions.ToString();
@@ -37,6 +46,11 @@ public class GameManager : MonoBehaviour
         gameOver = false;
         gameOverPanel.SetActive(false);
         pauseMenu.SetActive(false);
+        
+        //Play music
+        GetComponent<AudioSource>().clip = currentPlaylist[0];
+        GetComponent<AudioSource>().Play();
+        Invoke("FinishSong", currentPlaylist[0].length);
     }
 
     public void HitTarget()
@@ -117,5 +131,15 @@ public class GameManager : MonoBehaviour
     {
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
+    }
+
+    public void FinishSong()
+    {
+        currentSong = currentPlaylist[Random.Range(0, currentPlaylist.Length)];
+        GetComponent<AudioSource>().PlayOneShot(currentSong);
+
+        float nextDuration = currentSong.length;
+        
+        Invoke("FinishSong", nextDuration);
     }
 }
