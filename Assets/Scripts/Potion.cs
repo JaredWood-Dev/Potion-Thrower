@@ -18,6 +18,8 @@ public class Potion : MonoBehaviour
     public GameObject potionSound;
 
     public float potionMass = 1;
+
+    public bool leftPlayer = false;
     
     void Start()
     {
@@ -73,8 +75,27 @@ public class Potion : MonoBehaviour
         }
     }
 
-    void DestroyPotion()
+    public void DestroyPotion()
     {
+        var effect = Instantiate(potionEffect, transform.position, Quaternion.identity);
+        var main = effect.main;
+        main.startColor = potionColor;
+        effect.Play();
+            
+        //Sound Effect
+        Instantiate(potionSound, transform.position, Quaternion.identity);
+        
         Destroy(gameObject);
+    }
+
+    public void Throw()
+    {
+        Invoke("EnablePlayerCollision", 1f);
+    }
+
+    void EnablePlayerCollision()
+    {
+        leftPlayer = true;
+        gameObject.layer = LayerMask.NameToLayer("Potion");
     }
 }

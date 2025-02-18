@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6227539165484365366}
   - component: {fileID: 2769171663834590110}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Solution
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: -8114977713993660244}
   - component: {fileID: -6834065754894376558}
   - component: {fileID: 4606360533835038469}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Potion
   m_TagString: Potion
   m_Icon: {fileID: 0}
@@ -212,6 +212,7 @@ MonoBehaviour:
   potionEffect: {fileID: 4958426606782605611, guid: 406ae1d0c6f41ee4d8de491b042207e1, type: 3}
   potionSound: {fileID: 8010565936186002173, guid: b366179f9fe3e2f4ab8cbb8263d4ef8e, type: 3}
   potionMass: 2
+  leftPlayer: 0
 --- !u!50 &-8114977713993660244
 Rigidbody2D:
   serializedVersion: 5

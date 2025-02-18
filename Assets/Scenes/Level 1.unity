@@ -757,6 +757,10 @@ PrefabInstance:
       value: Thrower
       objectReference: {fileID: 0}
     - target: {fileID: 5233933225041699747, guid: c4ae1a9a5839494498e6d43b7c7c2cee, type: 3}
+      propertyPath: potion
+      value: 
+      objectReference: {fileID: 5617915111984173923, guid: 8190e583c636c2a4ab44759062591cab, type: 3}
+    - target: {fileID: 5233933225041699747, guid: c4ae1a9a5839494498e6d43b7c7c2cee, type: 3}
       propertyPath: powerMeter
       value: 
       objectReference: {fileID: 1450654829}

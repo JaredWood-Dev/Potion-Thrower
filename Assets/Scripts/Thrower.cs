@@ -112,6 +112,8 @@ public class Thrower : MonoBehaviour
         rb.AddForce(potion.transform.right * throwForce, ForceMode2D.Impulse);
         rb.constraints = RigidbodyConstraints2D.None;  
         rb.angularVelocity = potionSpinSpeed;
+
+        potion.GetComponent<Potion>().Throw();
         
         //Update the game manager
         GameObject.FindWithTag("GameManager").GetComponent<GameManager>().IncreasePotion();

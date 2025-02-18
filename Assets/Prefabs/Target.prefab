@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8899042645905284275}
   - component: {fileID: 8899042645905284274}
   - component: {fileID: 5125620644109676727}
+  - component: {fileID: -8858171092608497409}
   m_Layer: 0
   m_Name: Target
   m_TagString: Target
@@ -124,3 +125,20 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.875
+--- !u!114 &-8858171092608497409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8899042645905284236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45295da327a1f0049ac033f5d8db83d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 0
+  maxHitPoints: 5
+  resistances: 
+  vulnerabilities: 
+  immunities: 
