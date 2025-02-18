@@ -211,6 +211,7 @@ MonoBehaviour:
   - {fileID: -1862531894, guid: 9c7d35742a823754f92cc5550d9fdcf7, type: 3}
   potionEffect: {fileID: 4958426606782605611, guid: 406ae1d0c6f41ee4d8de491b042207e1, type: 3}
   potionSound: {fileID: 8010565936186002173, guid: b366179f9fe3e2f4ab8cbb8263d4ef8e, type: 3}
+  potionMass: 2
 --- !u!50 &-8114977713993660244
 Rigidbody2D:
   serializedVersion: 5

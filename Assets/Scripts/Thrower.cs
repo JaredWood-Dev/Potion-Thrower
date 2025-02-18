@@ -108,7 +108,8 @@ public class Thrower : MonoBehaviour
     {
         potion.transform.rotation = Quaternion.Euler(0, 0, throwAngle);
         Rigidbody2D rb = potion.GetComponent<Rigidbody2D>();
-        rb.linearVelocity = potion.transform.right * throwForce;
+        //rb.linearVelocity = potion.transform.right * throwForce;
+        rb.AddForce(potion.transform.right * throwForce, ForceMode2D.Impulse);
         rb.constraints = RigidbodyConstraints2D.None;  
         rb.angularVelocity = potionSpinSpeed;
         

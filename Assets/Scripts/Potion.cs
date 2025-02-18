@@ -16,6 +16,8 @@ public class Potion : MonoBehaviour
     
     //Shatter sound - might change implementation later
     public GameObject potionSound;
+
+    public float potionMass = 1;
     
     void Start()
     {
@@ -31,6 +33,9 @@ public class Potion : MonoBehaviour
         
         //Change the solution color
         potionSolution.GetComponent<SpriteRenderer>().color = potionColor;
+        
+        //Apply the mass of the potion
+        GetComponent<Rigidbody2D>().mass = potionMass;
     }
 
     void Update()
