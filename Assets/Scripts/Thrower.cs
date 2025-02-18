@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class Thrower : MonoBehaviour
@@ -35,6 +36,7 @@ public class Thrower : MonoBehaviour
     void Start()
     {
         head.transform.position = transform.position + new Vector3(0.1f, 0.75f, 0.1f);
+        
     }
 
     void Update()
@@ -46,7 +48,7 @@ public class Thrower : MonoBehaviour
         RectTransformUtility.ScreenPointToWorldPointInRectangle(angleTransform, angleTransform.position, Camera.main, out position);
         gameObject.transform.position = position;
         
-        if (Input.GetKeyUp("space"))
+        if (Input.GetButtonUp("Jump"))
         {
             if(_activePotion != null)
                 ThrowPotion(_activePotion);
@@ -74,7 +76,7 @@ public class Thrower : MonoBehaviour
     {
         //While space is held, the throw power increases
         //On release, a potion is thrown, in the indicated direction with the indicated speed
-        if (Input.GetKey("space"))
+        if (Input.GetButton("Jump"))
         {
             if (!_activePotion)
             {
@@ -88,11 +90,11 @@ public class Thrower : MonoBehaviour
         
 
         //The left and right inputs change the direction Syruyar throws the potion
-        if (Input.GetKey("a"))
+        if (Input.GetAxisRaw("Horizontal") < 0)
         {
             throwAngle += angleSensitivity;
         }
-        if (Input.GetKey("d"))
+        if (Input.GetAxisRaw("Horizontal") > 0)
         {
             throwAngle -= angleSensitivity;
         }
