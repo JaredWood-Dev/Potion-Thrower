@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6815810210940053959}
   - component: {fileID: -784707789610220570}
   - component: {fileID: -8361050582022004634}
+  - component: {fileID: 7321882665724196337}
   m_Layer: 7
   m_Name: Thrower
   m_TagString: Untagged
@@ -112,7 +113,7 @@ MonoBehaviour:
   potionSpinSpeed: 250
   throwForce: 0
   forceSensitivity: 0.3
-  potion: {fileID: 5866494060067486688, guid: a570511634f197c40a138608b8cb06bd, type: 3}
+  potion: {fileID: 7024292615367557588, guid: 6c042f091a9624741be740fc7c550999, type: 3}
   head: {fileID: 6401489126598879540}
   rotateHead: 0
   rotationSelector: {fileID: 0}
@@ -345,6 +346,26 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.75, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &7321882665724196337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3470328825139039915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4773e1fc8642a4949879e499dd605866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPotions:
+  - {fileID: 7024292615367557588, guid: 6c042f091a9624741be740fc7c550999, type: 3}
+  - {fileID: 5617915111984173923, guid: 8190e583c636c2a4ab44759062591cab, type: 3}
+  - {fileID: 5617915111984173923, guid: 8190e583c636c2a4ab44759062591cab, type: 3}
+  - {fileID: 1108681957240492687, guid: 99388933054530b4b8f0da9c018fddda, type: 3}
+  - {fileID: 7024292615367557588, guid: 6c042f091a9624741be740fc7c550999, type: 3}
+  maxPotions: -1
+  defaultPotion: {fileID: 1108681957240492687, guid: 99388933054530b4b8f0da9c018fddda, type: 3}
 --- !u!1 &6401489126598879540
 GameObject:
   m_ObjectHideFlags: 0

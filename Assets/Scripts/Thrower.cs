@@ -50,6 +50,9 @@ public class Thrower : MonoBehaviour
         
         if (Input.GetButtonUp("Jump"))
         {
+            //Queue the next potion
+            potion = GetComponent<PotionQueue>().GetPotion();
+            
             if(_activePotion != null)
                 ThrowPotion(_activePotion);
             _activePotion = null;

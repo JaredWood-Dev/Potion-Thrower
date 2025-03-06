@@ -25,9 +25,8 @@ namespace Potion_Types
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine(e);
+                    //Console.WriteLine(e);
                     print("Target doesn't have a health component");
-                    throw;
                 }
             }
         }
