@@ -16,6 +16,9 @@ public class HealthComponent : MonoBehaviour
     public Enums.DamageType[] vulnerabilities;
     public Enums.DamageType[] immunities;
 
+    [Header("Object Status"), Tooltip("If the target is an object, it cannot be healed.")]
+    public bool isObject;
+
     void Start()
     {
         hitPoints = maxHitPoints;
@@ -33,7 +36,7 @@ public class HealthComponent : MonoBehaviour
             return;
         }
 
-        if (hitPoints <= 0)
+        if (hitPoints + amount <= 0)
         {
             hitPoints = 0;
             DestroyEntity();

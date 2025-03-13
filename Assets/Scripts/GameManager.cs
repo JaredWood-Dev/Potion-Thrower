@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public int totalTargets;
     private int _startingTargetAmount;
     public float timeElapsed;
+    public int struckTargets;
     
     [Header("UI Elements")]
     public Text potionText;
@@ -95,7 +96,7 @@ public class GameManager : MonoBehaviour
         
         finalPotionText.text = "Potions Thrown: " + thrownPotions.ToString();
         finalTimeText.text = "Time Elapsed: " + GetTime(timeElapsed);
-        float percentAccuracy = (_startingTargetAmount / (float)thrownPotions) * 100;
+        float percentAccuracy = (struckTargets / (float)thrownPotions) * 100;
         accuracyText.text = $"Accuracy: {percentAccuracy:00.0}%";
 
         if (SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCountInBuildSettings - 1)

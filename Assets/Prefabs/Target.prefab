@@ -142,3 +142,4 @@ MonoBehaviour:
   resistances: 
   vulnerabilities: 
   immunities: 
+  isObject: 1

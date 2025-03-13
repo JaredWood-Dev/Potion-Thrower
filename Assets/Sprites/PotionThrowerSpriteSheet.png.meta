@@ -1034,7 +1034,7 @@ TextureImporter:
         height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 1, y: 1, z: 1, w: 1}
+      border: {x: 3, y: 3, z: 3, w: 3}
       customData: 
       outline: []
       physicsShape: []
@@ -1090,6 +1090,50 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Angle_Selector_Alt
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 86
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55368d17643a2f54781a70bb7f4ffea3
+      internalID: 546317387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potion_Queue
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 86
+        width: 9
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbaf981e34b38f94ba1424d3053e0bd8
+      internalID: 1282091919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -1105,6 +1149,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Angle_Selector: 504367317
+      Angle_Selector_Alt: 546317387
       Blue_Potion_1: -442775466
       Blue_Potion_2: 484911849
       Blue_Potion_3: -1659707216
@@ -1149,6 +1194,7 @@ TextureImporter:
       PotionThrowerSpriteSheet_7: 297406881
       PotionThrowerSpriteSheet_8: -34756833
       PotionThrowerSpriteSheet_9: 2118139586
+      Potion_Queue: 1282091919
       Power_Meter: 1181294976
       Power_Selector: -534453594
       Red_Potion_1: 1111699049

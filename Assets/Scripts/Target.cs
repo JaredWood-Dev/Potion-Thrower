@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
+    /*
     public int hitPoints;
 
     public void DamageTarget(int damage)
@@ -12,4 +13,5 @@ public class Target : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    */
 }
