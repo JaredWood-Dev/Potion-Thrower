@@ -37,6 +37,8 @@ public class Thrower : MonoBehaviour
     {
         head.transform.position = transform.position + new Vector3(0.1f, 0.75f, 0.1f);
         
+        //Show the player the next potion
+        GameObject.Find("Next Potion Holder").GetComponent<PotionPreview>().UpdatePotion(potion);
     }
 
     void Update()
@@ -52,6 +54,8 @@ public class Thrower : MonoBehaviour
         {
             //Queue the next potion
             potion = GetComponent<PotionQueue>().GetPotion();
+            
+            GameObject.Find("Next Potion Holder").GetComponent<PotionPreview>().UpdatePotion(potion);
             
             if(_activePotion != null)
                 ThrowPotion(_activePotion);

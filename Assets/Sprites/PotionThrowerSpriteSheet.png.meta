@@ -1121,7 +1121,7 @@ TextureImporter:
         width: 9
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1130,6 +1130,28 @@ TextureImporter:
       bones: []
       spriteID: fbaf981e34b38f94ba1424d3053e0bd8
       internalID: 1282091919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Next_Potion_Selector
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 46
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9983912e41b66184f89380b5f6992eb4
+      internalID: 1505682565
       vertices: []
       indices: 
       edges: []
@@ -1168,6 +1190,7 @@ TextureImporter:
       Material_Bouncy: -735905205
       Material_Stone: 1104038743
       Material_Wood: -865351603
+      Next_Potion_Selector: 1505682565
       PotionThrowerSpriteSheet_10: -1082920692
       PotionThrowerSpriteSheet_11: -1375811273
       PotionThrowerSpriteSheet_16: -270444920
