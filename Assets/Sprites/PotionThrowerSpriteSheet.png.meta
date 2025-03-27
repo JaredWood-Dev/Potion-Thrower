@@ -1143,7 +1143,7 @@ TextureImporter:
         width: 16
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1152,6 +1152,28 @@ TextureImporter:
       bones: []
       spriteID: 9983912e41b66184f89380b5f6992eb4
       internalID: 1505682565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button_Selected
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 2, y: 2, z: 2, w: 2}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: defd100bf4390b9428bcc134787bf616
+      internalID: -1460564069
       vertices: []
       indices: 
       edges: []
@@ -1183,6 +1205,7 @@ TextureImporter:
       Bottle_3: 1193088166
       Bottle_4: 233064445
       Button: 384587469
+      Button_Selected: -1460564069
       Green_Potion_1: 1360706123
       Green_Potion_2: -366181788
       Green_Potion_3: -1895780138

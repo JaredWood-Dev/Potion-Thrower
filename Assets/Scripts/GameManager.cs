@@ -80,6 +80,7 @@ public class GameManager : MonoBehaviour
         {
             pauseMenu.SetActive(true);
             Time.timeScale = 0;
+            GameObject.Find("Resume Button").GetComponent<Button>().Select();
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && pauseMenu.activeInHierarchy)
         {
@@ -93,6 +94,8 @@ public class GameManager : MonoBehaviour
     {
         gameOver = true;
         gameOverPanel.SetActive(true);
+
+        Time.timeScale = 0;
         
         finalPotionText.text = "Potions Thrown: " + thrownPotions.ToString();
         finalTimeText.text = "Time Elapsed: " + GetTime(timeElapsed);
@@ -103,6 +106,8 @@ public class GameManager : MonoBehaviour
         {
             gameOverPanel.transform.GetChild(0).gameObject.SetActive(false);
         }
+        
+        GameObject.Find("Next Level Button").GetComponent<Button>().Select();
     }
 
     string GetTime(float time)

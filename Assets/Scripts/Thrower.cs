@@ -50,7 +50,7 @@ public class Thrower : MonoBehaviour
         RectTransformUtility.ScreenPointToWorldPointInRectangle(angleTransform, angleTransform.position, Camera.main, out position);
         gameObject.transform.position = position;
         
-        if (Input.GetButtonUp("Jump"))
+        if (Input.GetButtonUp("Jump") && Time.timeScale > 0f)
         {
             //Queue the next potion
             potion = GetComponent<PotionQueue>().GetPotion();

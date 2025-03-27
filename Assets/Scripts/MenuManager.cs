@@ -30,12 +30,14 @@ public class MenuManager : MonoBehaviour
     {
         levelSelect.SetActive(true);
         mainMenu.SetActive(false);
+        GameObject.Find("LevelButton(Clone)").GetComponent<Button>().Select();
     }
 
     public void DisplayMenu()
     {
         mainMenu.SetActive(true);
         levelSelect.SetActive(false);
+        GameObject.Find("Play Button").GetComponent<Button>().Select();
     }
 
     public void LoadLevel(int level)
