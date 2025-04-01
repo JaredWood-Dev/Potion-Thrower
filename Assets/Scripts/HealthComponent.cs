@@ -19,9 +19,15 @@ public class HealthComponent : MonoBehaviour
     [Header("Object Status"), Tooltip("If the target is an object, it cannot be healed.")]
     public bool isObject;
 
+    private AnimationComponent _ac;
+
     void Start()
     {
         hitPoints = maxHitPoints;
+        
+        //Check if we have an animation Component
+        if (GetComponent<AnimationComponent>())
+            _ac = GetComponent<AnimationComponent>();
     }
 
     /*
@@ -50,6 +56,10 @@ public class HealthComponent : MonoBehaviour
      */
     public void Damage(int amount, Enums.DamageType damageType)
     {
+        //If we have animations and take damage 
+        if (_ac)
+            _ac.Hit();
+        
         int damageDealt = amount;
         
         foreach (var vulnerability in vulnerabilities)

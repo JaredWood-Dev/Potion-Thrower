@@ -21,6 +21,7 @@ namespace Potion_Types
                 try
                 {
                     collision.gameObject.GetComponent<HealthComponent>().Damage(damageAmount, damageType);
+                    TranfserMomentum(collision);
                     DestroyPotion();
                 }
                 catch (Exception e)

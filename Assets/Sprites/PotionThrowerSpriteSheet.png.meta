@@ -1165,7 +1165,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 2, y: 2, z: 2, w: 2}
       customData: 
       outline: []
@@ -1174,6 +1174,138 @@ TextureImporter:
       bones: []
       spriteID: defd100bf4390b9428bcc134787bf616
       internalID: -1460564069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 70
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec3bedbf81f45840b0216722dcc2e24
+      internalID: -1623349418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 54
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b85cb60dc78094396001f7190eb49a
+      internalID: -1638810819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 38
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0226a5c38dbd5174d9fc86c131f142b6
+      internalID: -140955566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp_Hit_0
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 70
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a5ee1e6d7f3a141a2a689d85174a25
+      internalID: 775174141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp_Fire_0
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 70
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ccf56feed45844478fe042502cc4b84
+      internalID: 2104078308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imp_Fire_1
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 54
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5285d77d309626a4e9fb1e8c8299a144
+      internalID: -806579652
       vertices: []
       indices: 
       edges: []
@@ -1210,6 +1342,12 @@ TextureImporter:
       Green_Potion_2: -366181788
       Green_Potion_3: -1895780138
       Green_Potion_4: -1375724995
+      Imp_Fire_0: 2104078308
+      Imp_Fire_1: -806579652
+      Imp_Hit_0: 775174141
+      Imp_Idle_0: -1623349418
+      Imp_Idle_1: -1638810819
+      Imp_Idle_2: -140955566
       Material_Bouncy: -735905205
       Material_Stone: 1104038743
       Material_Wood: -865351603

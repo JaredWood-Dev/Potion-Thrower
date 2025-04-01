@@ -17,7 +17,11 @@ public class Potion : MonoBehaviour
     //Shatter sound - might change implementation later
     public GameObject potionSound;
 
+    [Header("Potion Physics")]
     public float potionMass = 1;
+    [Range(0, 1), Tooltip("This describes how much the potion 'gives' its momentum to the object it collides. 1 means all momentum, 0 means none.")]
+    public float potionElasticity = 1.0f;
+    
 
     public bool leftPlayer = false;
     
@@ -97,5 +101,18 @@ public class Potion : MonoBehaviour
     {
         leftPlayer = true;
         gameObject.layer = LayerMask.NameToLayer("Potion");
+    }
+
+    public void TranfserMomentum(Collision2D collision)
+    {
+        //Momentum Transfer
+        float potionMomentum = GetComponent<Rigidbody2D>().linearVelocity.magnitude * GetComponent<Rigidbody2D>().mass;
+        Vector2 potionDirection = GetComponent<Rigidbody2D>().linearVelocity.normalized;
+        if (collision.gameObject.GetComponent<Rigidbody2D>())
+        {
+            float targetVelocity = (potionMomentum * potionElasticity) / GetComponent<Rigidbody2D>().mass;
+            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(targetVelocity * potionDirection, ForceMode2D.Impulse);
+            print("Added: " + potionMomentum);
+        }
     }
 }

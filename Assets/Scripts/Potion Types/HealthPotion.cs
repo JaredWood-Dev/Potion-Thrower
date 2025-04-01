@@ -16,6 +16,7 @@ public class HealthPotion : Potion
         {
             if (!collision.gameObject.GetComponent<HealthComponent>().isObject)
                 collision.gameObject.GetComponent<HealthComponent>().ModifyHealth(healAmount);
+            TranfserMomentum(collision);
             DestroyPotion();
         }
         catch (NullReferenceException e)
